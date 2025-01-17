@@ -9,10 +9,11 @@
 }
 
 /* Universal Style  */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .margin {
     max-width: 1440px;
     margin: 0 auto;
@@ -86,9 +87,7 @@ button:active {
     align-items: center;
 }
 
-.nav-list {
-
-}
+.nav-list {}
 
 .nav-item {
     list-style: none;
@@ -122,29 +121,33 @@ button:active {
 
 /* Teams Style */
 
-.teams-container{
+.teams-container {
     max-width: 1440px;
     margin: 100px auto;
     align-items: center;
     justify-content: space-around;
 }
-.teams-title{
+
+.teams-title {
     margin: 0 80px;
 }
+
 .teams-title h3 {
     font-size: 45px;
     font-weight: 700;
     line-height: 53px;
 }
-.teams-img{
-    grid-template-columns: repeat(2 ,1fr);
+
+.teams-img {
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 
-#Features{
+#Features {
     color: rgb(255, 144, 14);
 }
-.media-img{
+
+.media-img {
     display: none;
 }
 
@@ -158,42 +161,90 @@ button:active {
 
 
 
+.main-last h3 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+}
 
+.main-last p {
+    margin-top: 24px;
+    margin-bottom: 100px;
+    width: 450px;
+    height: 52px;
+}
+.box-items{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.box {
+    text-align: center;
+    align-content: center;
+    height: 230px;
+    width: 230px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+}
+
+.box h3 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+}
+
+.box img {
+    width: 45px;
+    height: 45px;
+}
+
+.box h6 {
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
 
 /* Footer Style */
-footer{
+footer {
     max-width: 1440px;
     margin: 30px auto;
 }
-.support{
+
+.support {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-header{
+
+.footer-header {
     text-align: center;
     width: 542px;
     height: 129px;
 }
-.footer-header h3{
+
+.footer-header h3 {
     font-size: 45px;
-font-weight: 700;
-line-height: 53px;
+    font-weight: 700;
+    line-height: 53px;
 }
-.footer-header p{
+
+.footer-header p {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.footer-icons{
+
+.footer-icons {
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
-.footer-icons div img{
+
+.footer-icons div img {
     width: 70%;
 }
-.last{
+
+.last {
     width: auto;
     height: 100px;
     text-align: center;
@@ -215,9 +266,10 @@ line-height: 53px;
 
 
 @media screen and (max-width: 700px) {
-    body{
+    body {
         font-size: 5em;
     }
+
     .first-title {
         margin: 2% 2vw;
     }
@@ -226,50 +278,73 @@ line-height: 53px;
         display: block;
         text-align: center;
     }
-    .media-img{
+
+    .media-img {
         display: flex;
         margin-top: 20px;
         justify-content: center;
         align-items: center;
     }
-    .media-img img{
+
+    .media-img img {
         width: 90%;
     }
-    .display-flex {
+
+    .nav-bar {
         flex-direction: column;
-        
+
     }
-    .nav-list{
+    .teams-container{
+        flex-direction: column;
+    }
+    /* .nav-list {
         display: none;
     }
-    .nav-item{
+
+    .nav-item {
         margin: 0;
-    }
-    .banner{
+    } */
+
+    .banner {
         display: none;
     }
+
     .first-title h2 {
         font-size: 40px;
         font-weight: 700;
         line-height: 75px;
     }
-    .teams-img{
-    
-    gap: 10px;
+
+    .teams-img {
+
+        gap: 10px;
     }
-    .teams-img img{
+
+    .teams-img img {
         width: 100%;
     }
-    .teams-title{
+
+    .teams-title {
         text-align: center;
         margin-top: 30px;
     }
+
     .teams-title h3 {
         margin-bottom: 30px;
     }
-    .footer-icons{
+
+    .footer-icons {
         margin-left: 10vw;
         display: grid;
         grid-template-columns: 1;
+    }
+    .box{
+        width: auto;
+    }
+    .box-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 5px;
     }
 }
