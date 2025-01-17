@@ -1,7 +1,159 @@
 /* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Universal Style  */
+
+.margin {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* Button Style */
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+button:active {
+    background-color: red;
+}
+
+/* Display Style */
+
+.display-flex {
+    display: flex;
+}
+
+.display-grid {
+    display: grid;
+}
+
+/* Color Style */
+.dark-01 {
+    color: rgb(19, 19, 19);
+}
+
+.dark-02 {
+    color: rgb(66, 66, 66);
+}
+
+.bg-header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* Nav Style */
+.brand {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* First Title Style */
+
+.first-title {
+    text-align: center;
+    margin: 2% 30vw;
+}
+
+.first-title h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+/* Banner Style */
+.banner img {
+    width: 100%;
+}
 
 
 
-/* Univercal Style */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 5em;
+    }
+    .first-title {
+        margin: 2% 2vw;
+    }
+
+    .brand {
+        display: block;
+        text-align: center;
+    }
+
+    .display-flex {
+        flex-direction: column;
+    }
+    .nav-list{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .nav-item{
+        margin: 0;
+    }
+
+}
