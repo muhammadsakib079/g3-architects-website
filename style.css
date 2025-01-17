@@ -347,4 +347,7 @@ footer {
         align-items: center;
         gap: 5px;
     }
+    .main-last{
+        text-align: center;
+    }
 }
